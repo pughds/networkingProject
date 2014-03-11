@@ -1,0 +1,2320 @@
+﻿<Window x:Class="Final_Network_Simulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="900" Width="1600" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <Storyboard x:Key="animationRed1234">
+            
+            <DoubleAnimation x:Name="goodRedReset1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+            
+            <DoubleAnimation x:Name="goodRedDown1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+            
+            <DoubleAnimation x:Name="goodRed11234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Right1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+            
+            <DoubleAnimation x:Name="goodRed2Up1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed31234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Down1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp1234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed1784">
+
+            <DoubleAnimation x:Name="goodRedReset1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed11784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Right1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Down1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed81784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Down1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp1784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed25684">
+
+            <DoubleAnimation x:Name="goodRedReset25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed125684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Right25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Up25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Right25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Down25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Right25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Down25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Right25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Up25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp25684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed75684">
+
+            <DoubleAnimation x:Name="goodRedReset75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed175684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Right75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Down75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Right75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Up75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Right75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Down75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Right75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Up75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp75684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed75634">
+
+            <DoubleAnimation x:Name="goodRedReset75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed175634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Right75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Down75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Right75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Up75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Right75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Up75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Right75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Down75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp75634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed75234">
+
+            <DoubleAnimation x:Name="goodRedReset75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed175234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Right75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Down75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Up75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Right75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Up75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Left75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Right75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Down75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp75234"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+
+
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed25784">
+
+            <DoubleAnimation x:Name="goodRedReset25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed125784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Right25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Up25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Down25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Right25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Down25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Left25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Right25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Up25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+            
+            <DoubleAnimation x:Name="goodRedUp25784"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+
+
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed23684">
+
+            <DoubleAnimation x:Name="goodRedReset23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed123684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Right23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Up23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Right23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Left23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Down23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Down23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Right23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Up23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp23684"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed78634">
+
+            <DoubleAnimation x:Name="goodRedReset78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed178634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Right78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed7Down78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodRed8Right78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Left78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Up78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Up78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Right78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Down78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp78634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationRed25634">
+
+            <DoubleAnimation x:Name="goodRedReset25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodRedDown25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:0"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed125634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:2"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Right25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodRed2Up25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:4"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Right25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodRed5Down25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:6"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed6Right25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:8"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Up25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodRed3Right25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:10"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Down25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodRed4Right25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:12"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodRedRight25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:14"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodRedUp25634"
+                             Storyboard.TargetName="RedEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue1234">
+
+            <DoubleAnimation x:Name="goodBlueReset1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue11234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Right1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Up1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue31234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Down1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp1234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue1784">
+
+            <DoubleAnimation x:Name="goodBlueReset1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue11784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Right1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Down1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue81784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Down1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp1784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue25684">
+
+            <DoubleAnimation x:Name="goodBlueReset25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue125684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Right25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Up25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Right25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Down25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Right25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Down25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Right25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Up25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp25684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue75684">
+
+            <DoubleAnimation x:Name="goodBlueReset75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue175684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Right75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Down75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Right75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Down75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Right75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Down75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Right75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Up75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp75684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue75634">
+
+            <DoubleAnimation x:Name="goodBlueReset75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue175634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Right75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Down75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Right75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Down75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Right75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Up75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Right75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Down75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp75634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue75234">
+
+            <DoubleAnimation x:Name="goodBlueReset75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue175234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Right75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Down75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Up75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Right75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Up75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Left75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Right75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Down75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp75234"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+
+
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue25784">
+
+            <DoubleAnimation x:Name="goodBlueReset25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue125784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Right25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Up25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Down25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Right25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Down25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Left25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Right25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Up25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp25784"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+
+
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue23684">
+
+            <DoubleAnimation x:Name="goodBlueReset23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue123684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Right23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Up23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Right23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Left23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Down23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Down23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Right23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Up23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp23684"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue78634">
+
+            <DoubleAnimation x:Name="goodBlueReset78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue178634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Right78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue7Down78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="458"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue8Right78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Left78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Up78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="458" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Up78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Right78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Down78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp78634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+        <Storyboard x:Key="animationBlue25634">
+
+            <DoubleAnimation x:Name="goodBlueReset25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:0"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1550" To="72" Duration="0:0:0" AutoReverse="False"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueDown25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:16"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="75" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue125634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:18"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="72" To="340"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Right25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="340" To="468"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue2Up25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:20"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Right25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="468" To="608"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue5Down25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:22"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue6Right25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:24"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="608" To="968"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Up25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="215"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue3Right25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:26"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="968" To="1120"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Down25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="215" To="351"
+                             />
+
+            <DoubleAnimation x:Name="goodBlue4Right25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:28"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1120" To="1273"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueRight25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:30"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Left)"
+                             From="1273" To="1541"
+                             />
+
+            <DoubleAnimation x:Name="goodBlueUp25634"
+                             Storyboard.TargetName="BlueEllipse"
+                             BeginTime="0:0:32"
+                             Duration="0:0:2"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             From="351" To="75"
+                             />
+        </Storyboard>
+
+
+    </Window.Resources>
+    <Canvas Background="#FFB0B6A0">
+        <Image x:Name="router1" HorizontalAlignment="Left" Height="40" Margin="330,331,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="router2" HorizontalAlignment="Left" Height="40" Margin="458,195,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="router7" HorizontalAlignment="Left" Height="40" Margin="458,438,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="router5" HorizontalAlignment="Left" Height="40" Margin="598,331,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="router3" HorizontalAlignment="Left" Height="40" Margin="1110,195,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="router6" HorizontalAlignment="Left" Height="40" Margin="958,331,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="router4" HorizontalAlignment="Left" Height="40" Margin="1263,331,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="router8" HorizontalAlignment="Left" Height="40" Margin="1110,438,0,0" VerticalAlignment="Top" Width="40" Source="Resources/router.png" Panel.ZIndex="10"/>
+        <Image x:Name="sourceComputer" HorizontalAlignment="Left" Height="65" Margin="87,312,0,0" VerticalAlignment="Top" Width="65" Source="Resources/computer.png" Panel.ZIndex="10"/>
+        <Image x:Name="sourceComputer_Copy" HorizontalAlignment="Left" Height="65" Margin="1432,312,0,0" VerticalAlignment="Top" Width="65" Source="Resources/computer.png" Panel.ZIndex="10"/>
+        <Button Content="Application" HorizontalAlignment="Left" Margin="87,75,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Presentation" HorizontalAlignment="Left" Margin="87,100,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Session" HorizontalAlignment="Left" Margin="87,125,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Transport" HorizontalAlignment="Left" Margin="87,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Network" HorizontalAlignment="Left" Margin="87,175,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Data Link" HorizontalAlignment="Left" Margin="87,200,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Physical" HorizontalAlignment="Left" Margin="87,225,0,0" VerticalAlignment="Top" Width="75"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="95,95,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="95,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="95,145,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="95,170,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="95,195,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="95,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Button Content="Application" HorizontalAlignment="Left" Margin="1422,75,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Presentation" HorizontalAlignment="Left" Margin="1422,100,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Session" HorizontalAlignment="Left" Margin="1422,125,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Transport" HorizontalAlignment="Left" Margin="1422,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Network" HorizontalAlignment="Left" Margin="1422,175,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Data Link" HorizontalAlignment="Left" Margin="1422,200,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Physical" HorizontalAlignment="Left" Margin="1422,225,0,0" VerticalAlignment="Top" Width="75"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="1430,95,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="1430,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="1430,145,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="1430,170,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="1430,195,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="5" Margin="1430,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="57"/>
+        <Line X1="350" Y1="351" X2="478" Y2="215" Stroke="Black" StrokeThickness="2" />
+        <Line X1="478" Y1="215" X2="1130" Y2="215" Stroke="Black" StrokeThickness="2" />
+        <Line X1="1130" Y1="215" X2="1283" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="350" Y1="351" X2="478" Y2="458" Stroke="Black" StrokeThickness="2" />
+        <Line X1="478" Y1="215" X2="618" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="478" Y1="458" X2="618" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="618" Y1="351" X2="978" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="478" Y1="458" X2="1130" Y2="458" Stroke="Black" StrokeThickness="2" />
+        <Line X1="978" Y1="351" X2="1130" Y2="215" Stroke="Black" StrokeThickness="2" />
+        <Line X1="978" Y1="351" X2="1130" Y2="458" Stroke="Black" StrokeThickness="2" />
+        <Line X1="1130" Y1="458" X2="1283" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="124" Y1="245" X2="124" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="124" Y1="351" X2="350" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="1283" Y1="351" X2="1464" Y2="351" Stroke="Black" StrokeThickness="2" />
+        <Line X1="1459" Y1="351" X2="1459" Y2="245" Stroke="Black" StrokeThickness="2" />
+        <TextBlock x:Name="weightR1R7Red" HorizontalAlignment="Left" Margin="390,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.78,0.125" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR1R2Red" HorizontalAlignment="Left" Margin="390,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR2R3Red" HorizontalAlignment="Left" Margin="770,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR5R6Red" HorizontalAlignment="Left" Margin="770,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR2R5Red" HorizontalAlignment="Left" Margin="534,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR5R7Red" HorizontalAlignment="Left" Margin="534,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR7R8Red" HorizontalAlignment="Left" Margin="770,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR3R6Red" HorizontalAlignment="Left" Margin="1029,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR6R8Red" HorizontalAlignment="Left" Margin="1029,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR3R4Red" HorizontalAlignment="Left" Margin="1190,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <TextBlock x:Name="weightR4R8Red" HorizontalAlignment="Left" Margin="1190,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Foreground="Red"/>
+        <Label Content="R2" HorizontalAlignment="Left" Margin="458,169,0,0" VerticalAlignment="Top"/>
+        <Label Content="R1" HorizontalAlignment="Left" Margin="330,305,0,0" VerticalAlignment="Top"/>
+        <Label Content="R7" HorizontalAlignment="Left" Margin="458,472,0,0" VerticalAlignment="Top"/>
+        <Label Content="R5" HorizontalAlignment="Left" Margin="614,305,0,0" VerticalAlignment="Top"/>
+        <Label Content="R6" HorizontalAlignment="Left" Margin="958,305,0,0" VerticalAlignment="Top"/>
+        <Label Content="R3" HorizontalAlignment="Left" Margin="1110,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="R8" HorizontalAlignment="Left" Margin="1110,472,0,0" VerticalAlignment="Top"/>
+        <Label Content="R4" HorizontalAlignment="Left" Margin="1279,305,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1" Canvas.Left="709" Canvas.Top="60" Width="106"/>
+        <Label Content="Shortest Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="330" Canvas.Top="94"/>
+        <TextBox x:Name="txtShortestPathRed" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Canvas.Left="418" Canvas.Top="94"/>
+        <Label Content="Shortest Distance:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="308" Canvas.Top="126"/>
+        <TextBox x:Name="txtDistanceRed" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Canvas.Left="418" Canvas.Top="126"/>
+        <Ellipse  x:Name="RedEllipse" Fill="Red" Height="10" Canvas.Top="75" Canvas.Left="72" Stroke="Black" Width="10"/>
+        <Ellipse  x:Name="BlueEllipse" Fill="Blue" Height="10" Canvas.Top="75" Canvas.Left="72" Stroke="Black" Width="10"/>
+        <Label Content="Red Message:" Canvas.Left="333" Canvas.Top="60" Background="Red"/>
+        <Label Content="Blue Message:" Canvas.Left="893" Canvas.Top="60" Background="Blue"/>
+        <Label Content="Shortest Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="895" Canvas.Top="97"/>
+        <Label Content="Shortest Distance:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="873" Canvas.Top="124"/>
+        <TextBox x:Name="txtShortestPathBlue" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Canvas.Left="983" Canvas.Top="97"/>
+        <TextBox x:Name="txtDistanceBlue" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Canvas.Left="983" Canvas.Top="124"/>
+        <TextBox x:Name="txtWinner" Height="23" Canvas.Left="709" TextWrapping="Wrap" Canvas.Top="145" Width="120" Background="White"/>
+        <TextBox x:Name="txtInput1" Height="23" Canvas.Left="421" TextWrapping="Wrap" Canvas.Top="62" Width="120"/>
+        <TextBox x:Name="txtInput2" Height="23" Canvas.Left="983" TextWrapping="Wrap" Canvas.Top="62" Width="120"/>
+        <TextBlock x:Name="weightR1R2Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="418" Canvas.Top="285" Foreground="Blue"/>
+        <TextBlock x:Name="weightR1R7Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.78,0.125" Text="#" Canvas.Left="409" Canvas.Top="381" Foreground="Blue"/>
+        <TextBlock x:Name="weightR5R7Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="553" Canvas.Top="410" Foreground="Blue"/>
+        <TextBlock x:Name="weightR2R5Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="563" Canvas.Top="274" Foreground="Blue"/>
+        <TextBlock x:Name="weightR2R3Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="770" Canvas.Top="221" Foreground="Blue"/>
+        <TextBlock x:Name="weightR5R6Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="770" Canvas.Top="356" Foreground="Blue"/>
+        <TextBlock x:Name="weightR7R8Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="770" Canvas.Top="438" Foreground="Blue"/>
+        <TextBlock x:Name="weightR3R6Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="1052" Canvas.Top="305" Foreground="Blue"/>
+        <TextBlock x:Name="weightR6R8Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="1052" Canvas.Top="381" Foreground="Blue"/>
+        <TextBlock x:Name="weightR4R8Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="1204" Canvas.Top="410" Foreground="Blue"/>
+        <TextBlock x:Name="weightR3R4Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="#" Canvas.Left="1217" Canvas.Top="265" Foreground="Blue"/>
+        <ScrollViewer x:Name="sineCanvasScrollViewerRed"  Canvas.Left="39"  Canvas.Top="722" Height="120" Width="502" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <Canvas x:Name="sineCanvasRed" Height="100" Canvas.Left="300" Canvas.Top="439" Width="506">
+                <!--This Path is used to draw the bezier curves representing the FSK sine wave of the binary equivalent of the user input-->
+                <Path x:Name="sineWaveRed" Stroke="Red" StrokeThickness="2" Height="120">
+                    <Path.Data>
+                        <PathGeometry>
+                            <PathGeometry.Figures>
+                                <PathFigureCollection>
+                                    <PathFigure StartPoint="0,50">
+                                        <PathFigure.Segments>
+                                            <PathSegmentCollection x:Name="pathCollectionRed">
+                                                <!--<BezierSegment Point1="10,0" Point2="20,100" Point3="30,50"/>
+                                            <BezierSegment Point1="40,0" Point2="50,100" Point3="60,50"/>
+                                            <BezierSegment Point1="70,50" Point2="80,50" Point3="90,50"/>
+                                            <BezierSegment Point1="100,0" Point2="110,100" Point3="120,50"/>-->
+                                            </PathSegmentCollection>
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                </PathFigureCollection>
+                            </PathGeometry.Figures>
+                        </PathGeometry>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="sineCanvasScrollViewerBlue"  Canvas.Left="983"  Canvas.Top="722" Height="120" Width="504" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <Canvas x:Name="sineCanvasBlue" Height="100" Canvas.Left="300" Canvas.Top="439" Width="506">
+                <!--This Path is used to draw the bezier curves representing the FSK sine wave of the binary equivalent of the user input-->
+                <Path x:Name="sineWaveBlue" Stroke="Blue" StrokeThickness="2" Height="120">
+                    <Path.Data>
+                        <PathGeometry>
+                            <PathGeometry.Figures>
+                                <PathFigureCollection>
+                                    <PathFigure StartPoint="0,50">
+                                        <PathFigure.Segments>
+                                            <PathSegmentCollection x:Name="pathCollectionBlue">
+                                                <!--<BezierSegment Point1="10,0" Point2="20,100" Point3="30,50"/>
+                                            <BezierSegment Point1="40,0" Point2="50,100" Point3="60,50"/>
+                                            <BezierSegment Point1="70,50" Point2="80,50" Point3="90,50"/>
+                                            <BezierSegment Point1="100,0" Point2="110,100" Point3="120,50"/>-->
+                                            </PathSegmentCollection>
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                </PathFigureCollection>
+                            </PathGeometry.Figures>
+                        </PathGeometry>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </ScrollViewer>
+        <TextBlock x:Name="frameTextBlockRed" Height="141" Canvas.Left="39" TextWrapping="Wrap" Canvas.Top="576" Width="502" Text="Red Ethernet Frame Contents:"/>
+        <TextBlock x:Name="frameTextBlockBlue" Height="141" Canvas.Left="983" TextWrapping="Wrap" Canvas.Top="576" Width="502" Text="Blue Ethernet Frame Contents:"/>
+    </Canvas> 
+</Window>
